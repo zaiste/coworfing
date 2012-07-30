@@ -5,10 +5,10 @@ require File.expand_path('../application', __FILE__)
 Coworfing::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :address              => "smtp.gmail.com",
+  :address              => "smtp.mandrillapp.com",
   :port                 => 587,
-  :user_name            => ENV['SENDER_EMAIL'],
-  :password             => ENV['SENDER_PASS'],
+  :user_name            => 'coworfing@gmail.com',
+  :password             => 'be19de35-2ad7-4cc1-9a0c-3ebc9c625d6e',
   :authentication       => 'plain',
   :enable_starttls_auto => true
 }
